@@ -1,0 +1,243 @@
+baseURL: "https://www.riversheher.com"
+languageCode: "en-ca"
+title: "River Wang"
+theme: hugo-profile
+
+Paginate: 3
+enableRobotsTXT: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog
+      url: /blog
+      weight: 1
+    - identifier: gallery
+      name: Gallery
+      title: Gallery
+      url: /gallery
+      weight: 2
+
+params:
+  title: River W
+  description: River Wang, human software engineer
+  # staticPath: 
+  # favicon: "/fav.png"
+  
+  # Do you want to use the CDN to serve css and js?
+  useBootstrapCDN: false
+
+  # Add mathjax support on all pages?  Add it in per page by adding `mathjax: true` in formatter
+  # mathjax: false
+
+  # homepage animations
+  animate: true
+
+  theme:
+    defaultTheme: "dark"
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  #color preferences
+  #color:
+  # textColor:
+  # secondaryTextColor:
+  # backgroundColor:
+  # secondaryBackroundColor:
+  # primaryColor:
+  # secondaryColor:
+  
+
+  # darkmode:
+  #   textColor: ...
+
+  navbar:
+    align: ms-auto
+    brandName:
+    disableSearch: true
+    # searchPlaceholder:
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: true
+      disableAchievements: true
+      disableContact: false
+
+  hero:
+    enable: true
+    intro: "Your friendly average software developer nerd:"
+    title: "River W."
+    subtitle: "she/her"
+    image: /images/mept.png
+    bottomImage:
+      enable: true
+      roundImage: true
+    button:
+      enable: true
+      name: "Resume"
+      url: "#"
+      download: true
+      newPage: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/riversheher
+        - icon: fa-brands fa-linkedin
+          url: https://www.linkedin.com/in/river-wang/
+
+  about: 
+    enable: true
+    title: About Me
+    image: /images/squattingme.jpg
+    content: |- 
+      Welcome to my corner of the digital world! 
+      I'm River, a Java and Golang developer passionate about 
+      crafting efficient software solutions.
+
+      I thrive in the backend, 
+      where I've delved into diverse projects encompassing ETLs, 
+      microservice architecture and script generation/compilation. 
+      I'm proficient in API design and adept at navigating the intricacies 
+      of ETL development for complex data. I'm also quite profiecient in the art 
+      of hiding my imposter syndrome.
+
+      I've build large data volume services handling an 
+      average of 250k requests weekly. I've also developed 
+      a script generation system that retrieves complex data 
+      and standardizes it into effective models.
+
+      I'm an advocate for Test Driven Development (TDD) 
+      and ardently believe in user trust, safety and privacy. These are values that are
+      easily forgotten with the need for speed, so it's important for me to advocate
+      for them.
+
+      Outside of work, I'm a social butterfly
+      often found navigating the local party scene or diving into intriguing events. 
+      My free time is often devoted to delving into Daoist literature, 
+      seeking a balance between spirituality and the bustling tech world. 
+      You might not expect it, but I'm also a huge nerd with an increasing
+      interest in trading card games.
+    skills:
+      enable: true
+      title: "Here's some of the technologies I've worked with:"
+      items:
+        - "Golang"
+        - "Java"
+        - "Spring Boot"
+        - "Apache Kafka"
+        - "Docker"
+        - "ANTLR"
+        - "MySQL"
+        - "PostgreSQL"
+        - "Public Speaking"
+        - "Techincal Docs"
+
+  experience:
+    enable: true
+    title: "Experience"
+    items:
+    - job: "Software Development Intern"
+      company: "JD Power"
+      companyUrl: https://www.jdpower.com/
+      date: "May 2023 - present"
+      info:
+        enable: true
+      content: |
+        - Implemented high data volume services with Java Camel Orchestration,
+
+        - Managed and improved ETL services with Apache Kafka and Java Spring Boot,
+
+        - Improved time and space efficiency of code generation, parsing, and transpilation projects by 20-30%
+    - job: "Research Assistant"
+      company: "University of Alberta"
+      companyUrl: https://first3yearsproject.com/
+      date: "May 2022 - Jan 2023"
+      info:
+        enable: true
+      content: |
+        - Developed a Twitter connections ETL with Golang, and PostgreSQL
+
+        - Double data throughput and efficiency by taking advantage of concurrency patterns
+
+        - Ensured data safety by creating automated system restoration/backup procedures
+
+        - Made a lot of mistakes
+
+  education:
+    enable: true
+    index: false
+    items:
+      - title: Honours Bachelor of Science in Computer Science
+        school: 
+          name: "University of Western Ontario"
+          url: https://www.csd.uwo.ca/
+        date: "2020 - present"
+        GPA: "3.7 out of 4.0"
+        content: |-
+          Throughout my program, I specialized in software engineering. I learned skills including:
+
+          - Requirements gathering
+          - Test driven development
+          - Scrum and Agile methodology
+          - Project management
+          - Distributed Systems
+          - Compilation
+          - Handling rejection emails
+          - Suppresing imposter syndrome
+
+  projects:
+    enable: true
+    title: "Projects"
+    items:
+      - title: Cafe C++
+        content: A cafe ordering and inventory management system written in pure C++.  I managed the repository and handled most of the merging and conflict resolution.
+        featured: 
+          name: Repository
+          link: https://github.com/riversheher/cafe-cpp
+        badges:
+          - "C++"
+          - "Makefile"
+          - "lots more C++"
+          - "wt"
+      - title: Uni Meetups
+        content: A meetup social platform written for Calgary Hacks 2022.  This was my first project.  Going into this project, I didn't even know what an HTTP request was... It's fun to look back and see what I created when I was a naive beginner.
+        featured: 
+          name: Repository
+          link: https://github.com/riversheher/UniMeetups
+        badges:
+          - "python"
+          - "javascript"
+          - "bootstrap css"
+          - "flask"
+      - title: A Typical Developer
+        content: |
+          "A Typical Developer" is one white space away from "atypical developer".  This is a blog about being "average" in an industry that tends to over inflate our egos.
+        featured: 
+          name: Repository
+          link: https://github.com/riversheher/atypicaldeveloper
+        badges:
+          - "Hugo"
+          - "Markup"
+          - "Go"
+          - "Cloudflare CI/CD"
+
+  contact:
+    enable: true
+    content: Feel free to email me if you have any questions or just want to say hi!
+    email: riversheher@pm.me
+
+          
