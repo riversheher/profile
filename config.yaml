@@ -115,7 +115,7 @@ params:
       of ETL development for complex data. I'm also quite profiecient in the art 
       of hiding my imposter syndrome.
 
-      I've build large data volume services handling an 
+      I've built large data volume services handling an 
       average of 250k requests weekly. I've also developed 
       a script generation system that retrieves complex data 
       and standardizes it into effective models.
@@ -144,7 +144,7 @@ params:
         - "MySQL"
         - "PostgreSQL"
         - "Public Speaking"
-        - "Techincal Docs"
+        - "Technical Docs"
 
   experience:
     enable: true
