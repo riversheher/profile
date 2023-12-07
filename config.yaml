@@ -16,7 +16,7 @@ Menus:
     - identifier: blog
       name: Blog
       title: Blog
-      url: /blog
+      url: https://www.atypicaldeveloper.com
       weight: 1
     - identifier: gallery
       name: Gallery
